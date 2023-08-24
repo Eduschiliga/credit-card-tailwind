@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tailwind CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <section class="card-info-container">
+        <div class="card-info">
+          <div class="w-3/4 antialiased">
+            <h3 class="h-32 text-xl tracking-wide font-semibold">
+              Sem título.
+            </h3>
+            <div class="flex justify-between mb-2 items-center">
+              <div class="uppercase text-xl">Eduardo Schiliga</div>
+              <div>09/25</div>
+            </div>
+            <div class="flex justify-between font-mono text-2xl">
+              <span>7894</span>
+              <span>1546</span>
+              <span>1256</span>
+              <span>9999</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="font-light tracking-wider text-2xl mb-2">
+        Atualizar forma de pagamento
+      </h3>
+      <p class="text-gray-500 mb-4 text-lg">Atualize os dados do seu cartão.</p>
+      <form>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="txtNameOnCard" class="form-label">Nome no cartão</label>
+            <input
+              type="text"
+              name="name"
+              id="txtNameOnCard"
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="txtExpiry" class="form-label">Válido até</label>
+            <input
+              type="text"
+              name="expiry"
+              id="txtExpiry"
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="txtCardNumber" class="form-label"
+              >Número do cartão</label
+            >
+            <input
+              type="text"
+              name="card_number"
+              id="txtCardNumber"
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="txtCvv" class="form-label">CVV</label>
+            <input type="text" name="cvv" id="txtCvv" class="form-input" />
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="cancel-button">Cancelar</button>
+          <button type="submit" class="update-button">Atualizar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

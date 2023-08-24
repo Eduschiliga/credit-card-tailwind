@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.card-wrapper {
+  @apply w-[600px] mx-auto my-12 shadow-lg p-6 rounded-xl border border-gray-100 font-poppins;
+}
+
+.form-input {
+  @apply border border-gray-400 rounded-lg px-4 py-3;
+}
+
+.form-label {
+  @apply font-semibold tracking-wide mb-2;
+}
+
+.form-grid {
+  @apply grid gap-4 grid-cols-2;
+  grid-template-columns: 1fr 150px;
+}
+
+.form-field {
+    @apply flex flex-col;
+}
+
+.form-actions {
+  @apply grid grid-cols-2 gap-4 mt-8;
+}
+
+.cancel-button {
+  @apply bg-gray-200 hover:bg-gray-100 w-full border border-gray-400 py-4 rounded-lg text-lg;
+}
+
+.update-button {
+  @apply w-full border border-gray-400 py-4 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-lg;
+}
+
+.card-info-container {
+  @apply w-full p-8 mb-6 bg-gradient-to-br from-blue-500 via-orange-300 to-pink-500 rounded-xl;
+  height: 330px;
+}
+
+.card-info {
+  @apply bg-white bg-opacity-30 w-full h-full rounded-3xl p-8 text-white border border-white shadow-lg;
+}
